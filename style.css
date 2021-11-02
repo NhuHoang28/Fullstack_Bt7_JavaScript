@@ -1,0 +1,61 @@
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #34495E;
+}
+
+* {
+    color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.dropdown {
+    background-color: white;
+    margin: 1px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+ul {
+    height: 80px;
+    transition: height 0.3s ease-out;
+}
+
+li {
+    padding-left: 10px;
+    height: 30px;
+    transition: height 0.3s ease-out;
+    line-height: 100%;
+}
+
+a[display=none]+ul {
+    height: 0px;
+    overflow: hidden;
+}
+
+a[display=none]+ul>li {
+    height: 0px;
+    overflow: hidden;
+}
